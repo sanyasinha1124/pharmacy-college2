@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry - ABC Institute</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #495057;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #80bdff;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            font-weight: 500;
+        }
+        button:hover {
+            background-color: #0069d9;
+        }
+        .required-field::after {
+            content: " *";
+            color: #dc3545;
+        }
+        .success-message {
+            display: none;
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admission Enquiry Form</h1>
+        <form id="admissionForm">
+            <div class="form-group">
+                <label for="name" class="required-field">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required-field">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="required-field">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course" class="required-field">Preferred Course</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="B.Tech Computer Science">B.Tech Computer Science</option>
+                    <option value="MBA">MBA</option>
+                    <option value="B.Sc Data Science">B.Sc Data Science</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Questions</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+
+        <div id="successMessage" class="success-message">
+            Thank you for your enquiry! We will contact you shortly.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            
+            if (!name || !email || !phone || !course) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // In a real application, you would send data to a server here
+            // For demo, we'll just show the success message
+            document.getElementById('admissionForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            
+            // Reset form after 5 seconds (for demo)
+            setTimeout(() => {
+                document.getElementById('admissionForm').reset();
+                document.getElementById('admissionForm').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

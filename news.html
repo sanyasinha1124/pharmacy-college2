@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College News Ticker (Vertical)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .college-header {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .news-ticker {
+            background-color: white;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .news-ticker h3 {  
+            margin-top: 0;
+            text-align: center;
+            color: white;
+        }
+        .news-content {
+            position: absolute;
+            width: 100%;
+            animation: scroll-up 15s linear infinite;
+
+            
+        }
+        .news-item {
+            padding: 8px 0;
+            border-bottom: 1px dashed #003366;
+        }
+        @keyframes scroll-up {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+        .news-content:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="college-header">
+        <h1>ABC College News</h1>
+    </div>
+    <div>
+       <img src="pharma.jpg">
+    </div>
+
+    <!-- Vertical Scrolling News Ticker -->
+    <div class="news-ticker">
+        <h3>Latest Updates</h3>
+        <div class="news-content">
+            <div class="news-item">🎓 Admissions for 2024-25 are now open!</div>
+            <div class="news-item">📅 Last date to apply: June 30, 2024</div>
+            <div class="news-item">💰 Scholarships available for meritorious students</div>
+            <div class="news-item">🏆 College ranked #5 in the state</div>
+            <div class="news-item">📢 New courses introduced: AI & Data Science</div>
+            <div class="news-item">🔔 Campus reopening on August 1, 2024</div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
