@@ -1,79 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College News Ticker (Vertical)</title>
+    <title>College News | College of Pharmacy</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
-        .college-header {
-            background-color: #003366;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .news-ticker {
-            background-color: white;
-            height: 200px;
-            overflow: hidden;
-            border-radius: 5px;
-            padding: 10px;
-            position: relative;
-            margin-bottom: 20px;
-        }
-        .news-ticker h3 {  
-            margin-top: 0;
-            text-align: center;
-            color: white;
-        }
-        .news-content {
-            position: absolute;
-            width: 100%;
-            animation: scroll-up 15s linear infinite;
 
-            
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
         }
-        .news-item {
-            padding: 8px 0;
-            border-bottom: 1px dashed #003366;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        @keyframes scroll-up {
-            0% { transform: translateY(100%); }
-            100% { transform: translateY(-100%); }
+
+        header {
+            background: linear-gradient(135deg, #00529b, #003366);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
         }
-        .news-content:hover {
-            animation-play-state: paused;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            color: #00529b;
+            margin-bottom: 10px;
+        }
+
+        .news-date {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .news-summary {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="college-header">
-        <h1>ABC College News</h1>
-    </div>
-    <div>
-       <img src="pharma.jpg">
-    </div>
+    <div class="container">
+        <header>
+            <h1>Latest News & Events</h1>
+            <p>Stay updated with the latest happenings at the College of Pharmacy</p>
 
-    <!-- Vertical Scrolling News Ticker -->
-    <div class="news-ticker">
-        <h3>Latest Updates</h3>
-        <div class="news-content">
-            <div class="news-item">🎓 Admissions for 2024-25 are now open!</div>
-            <div class="news-item">📅 Last date to apply: June 30, 2024</div>
-            <div class="news-item">💰 Scholarships available for meritorious students</div>
-            <div class="news-item">🏆 College ranked #5 in the state</div>
-            <div class="news-item">📢 New courses introduced: AI & Data Science</div>
-            <div class="news-item">🔔 Campus reopening on August 1, 2024</div>
-        </div>
-    </div>
 
-    
+
+           
+
+        </header>
+        
+        <!-- Latest Updates Section with Inline CSS -->
+<div style="background-color: #e1e1ff; padding: 20px; border-left: 5px solid #ffcc00; border-radius: 8px; margin-bottom: 80px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); max-width: 100%; position: relative; overflow: hidden; height: 210px;">
+    <h2 style="color: #00529b; font-size: 1.4rem; margin-bottom: 10px;">Latest Updates</h2>
+    <div style="height: 70px; overflow: hidden; position: relative;">
+        <ul style="position: absolute; margin: 0; padding: 0; list-style: none; animation: scroll-up 12s linear infinite;">
+            <li style="padding: 6px 0; font-size: 1rem;">🎓 Admissions open for M.Pharm 2025-26 batch – Apply Now!</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🏆 Ranked among Top 20 Pharmacy Institutions in India</li>
+            <li style="padding: 6px 0; font-size: 1rem;">📢 Ph.D. applications deadline extended to June 15</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🧪 AICTE-sponsored FDP begins May 20</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🔬 New Drug Discovery Lab inaugurated</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Inline Keyframe Animation -->
+<style>
+@keyframes scroll-up {
+  0% { top: 0; }
+  20% { top: 0; }
+  25% { top: -70px; }
+  45% { top: -70px; }
+  50% { top: -140px; }
+  70% { top: -140px; }
+  75% { top: -210px; }
+  95% { top: -210px; }
+  100% { top: 0; }
+}
+</style>
+
+
+
+  
+
+        <section class="news-section">
+            <!-- News Item 1 -->
+            <div class="news-card">
+                <img src="images/seminar.jpg" alt="Pharmacy Seminar" class="news-image">
+                <div class="news-content">
+                    <div class="news-title">National Seminar on Pharmaceutical Innovations</div>
+                    <div class="news-date">May 10, 2025</div>
+                    <div class="news-summary">
+                        The college hosted a national seminar on innovations in pharmaceutical sciences with over 20 speakers and 300 participants.
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-card">
+                <img src="images/convocation.jpg" alt="Convocation Ceremony" class="news-image">
+                <div class="news-content">
+                    <div class="news-title">Graduation Ceremony 2025</div>
+                    <div class="news-date">April 25, 2025</div>
+                    <div class="news-summary">
+                        The annual convocation ceremony celebrated the achievements of our B.Pharm and M.Pharm graduates with distinguished guests.
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-card">
+                <img src="images/placement.jpg" alt="Placement Drive" class="news-image">
+                <div class="news-content">
+                    <div class="news-title">Campus Placement Drive 2025</div>
+                    <div class="news-date">March 15, 2025</div>
+                    <div class="news-summary">
+                        Leading pharmaceutical companies participated in the placement drive, offering roles in R&D, QC, and clinical research.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
