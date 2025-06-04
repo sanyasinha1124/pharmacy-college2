@@ -18,71 +18,101 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Header Section -->
-<header class="bg-[#0B4A6B]">
-  <nav class="container mx-auto px-4 py-4 flex items-center justify-between flex-wrap">
-    
-    <!-- Left: Logo -->
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <img src="abc.jpeg" alt="Pharmacy" class="h-16 w-auto mr-4">
-      <span class="font-bold text-xl tracking-tight text-[#e1e1ff]">STIPSR</span>
+ <!-- Header Section -->
+  <header style="background-color:#0B4A6B; color: white;">
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 20px; flex-wrap:wrap;">
+      
+      <!-- Logo & Title -->
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="abc.jpeg" alt="Pharmacy Logo" style="height:60px; width:auto;">
+        <h1 style="font-size:24px; margin:0; color:#e1e1ff;">STIPSR</h1>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div onclick="toggleMenu()" style="font-size:28px; cursor:pointer; display:none;" id="menu-icon">
+        ☰
+      </div>
     </div>
 
-    <!-- Mobile toggle button -->
-    <div class="block md:hidden">
-      <button id="menu-toggle" class="text-white focus:outline-none">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-    </div>
+    <!-- Navigation -->
+    <nav>
+      <ul id="nav-links" style="list-style:none; padding:0; margin:0; display:flex; justify-content:center; flex-wrap:wrap;">
+        <li style="position:relative;"><a href="index.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Home</a></li>
 
-    <!-- Nav links -->
-    <div id="nav-links" class="w-full md:flex md:items-center md:w-auto hidden md:block">
-      <ul class="md:flex md:space-x-6 text-white text-sm mt-4 md:mt-0">
-        <li><a href="index.html" class="hover:underline">Home</a></li>
-
-        <!-- Dropdown Example -->
-        <li class="relative group">
-          <a href="#" class="flex items-center hover:underline">About Us <i class="fas fa-chevron-down ml-1"></i></a>
-          <div class="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-            <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About</a>
-            <a href="institute.html" class="block px-4 py-2 hover:bg-gray-100">Institute</a>
-            <a href="vison.html" class="block px-4 py-2 hover:bg-gray-100">Vision and Mission</a>
-            <a href="message.html" class="block px-4 py-2 hover:bg-gray-100">Message</a>
-            <a href="diploma.html" class="block px-4 py-2 hover:bg-gray-100">GB/CDC</a>
-            <a href="org.html" class="block px-4 py-2 hover:bg-gray-100">Organogram</a>
-            <a href="infrastructure.html" class="block px-4 py-2 hover:bg-gray-100">Infrastructure</a>
+        <li style="position:relative;">
+          <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">About Us ▼</a>
+          <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
+            <a href="about.html" style="color:black; padding:10px; display:block; text-decoration:none;">About</a>
+            <a href="institute.html" style="color:black; padding:10px; display:block; text-decoration:none;">Institute</a>
+            <a href="vison.html" style="color:black; padding:10px; display:block; text-decoration:none;">Vision & Mission</a>
+            <a href="message.html" style="color:black; padding:10px; display:block; text-decoration:none;">Message</a>
           </div>
         </li>
 
-        <!-- Repeat this block for other dropdowns -->
-        <li><a href="admissions.html" class="hover:underline">Faculty</a></li>
-        <li><a href="admissions.html" class="hover:underline">IQAC</a></li>
-        <li><a href="admissions.html" class="hover:underline">Event</a></li>
-        <li><a href="admissions.html" class="hover:underline">Alumni</a></li>
+        <li style="position:relative;">
+          <a href="#" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Courses ▼</a>
+          <div style="display:none; position:absolute; background:white; z-index:999;" class="dropdown">
+            <a href="bpharm.html" style="color:black; padding:10px; display:block; text-decoration:none;">D.Pharm</a>
+          </div>
+        </li>
+
+        <li><a href="admissions.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Faculty</a></li>
+        <li><a href="events.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Events</a></li>
+        <li><a href="contact.html" style="color:white; text-decoration:none; padding:10px 15px; display:block;">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 text-white">
-    <ul class="space-y-2">
-      <li><a href="index.html" class="block hover:underline">Home</a></li>
-      <li><a href="about.html" class="block hover:underline">About</a></li>
-      <li><a href="institute.html" class="block hover:underline">Institute</a></li>
-      <li><a href="admissions.html" class="block hover:underline">Faculty</a></li>
-      <li><a href="admissions.html" class="block hover:underline">IQAC</a></li>
-      <li><a href="admissions.html" class="block hover:underline">Event</a></li>
-      <li><a href="admissions.html" class="block hover:underline">Alumni</a></li>
-    </ul>
-  </div>
-</header>
+  <!-- Example Main Content -->
+  <main style="padding: 20px;">
+    <h2>Welcome to STIPSR Pharmacy College</h2>
+    <p>This is a sample responsive multi-page website using only inline CSS and basic JavaScript.</p>
+  </main>
 
-<!-- JS for toggle -->
-<script>
-  document.getElementById('menu-toggle').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-</script>
+  <!-- JavaScript for Toggle Menu and Dropdowns -->
+  <script>
+    // Toggle for small screens
+    function toggleMenu() {
+      var nav = document.getElementById("nav-links");
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+        nav.style.alignItems = "flex-start";
+      }
+    }
 
+    // Show dropdowns on hover (only for desktop)
+    document.querySelectorAll("li").forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        let dropdown = item.querySelector(".dropdown");
+        if (dropdown) dropdown.style.display = "block";
+      });
+      item.addEventListener("mouseleave", () => {
+        let dropdown = item.querySelector(".dropdown");
+        if (dropdown) dropdown.style.display = "none";
+      });
+    });
+
+    // Responsive hamburger icon display
+    function handleResize() {
+      const menuIcon = document.getElementById("menu-icon");
+      const nav = document.getElementById("nav-links");
+      if (window.innerWidth <= 768) {
+        menuIcon.style.display = "block";
+        nav.style.display = "none";
+      } else {
+        menuIcon.style.display = "none";
+        nav.style.display = "flex";
+        nav.style.flexDirection = "row";
+        nav.style.justifyContent = "center";
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
+  </script>
     
 
     <!-- Hero Section -->
