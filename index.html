@@ -1,3 +1,7 @@
+
+
+ 
+            
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +10,14 @@
     <title>College of Pharmacy - Excellence in Pharmaceutical Education</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+   
+
 </head>
-<body >
+
+<body style="background-color: #f0fff4;" >
     <!-- Header Section -->
-    <header class="header">
-        <div class="top-bar">
+    <header class="header" style="background-color:#0B4A6B;">
+        <!-- <div class="top-bar">
             <div class="container">
                 <div class="contact-info">
                     <span><i class="fas fa-phone"></i> +91 234567890</span>
@@ -21,43 +28,96 @@
                    
                 </div>
             </div>
-        </div>
+        </div> -->
+
+       
         
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="abc.jpeg" alt="Pharmacy">
-                    <div class="logo-text">
-                        <h1>Pharmacy College</h1>
-                        <span></span>
-                    </div>
-                </a>
-                
-                <div class="nav-links" id="navLinks">
+        <nav class=navbar style="background-color:#0B4A6B">
+
+          <div class="container" style="display: flex; justify-content: center;  gap: 0; padding: 20px; ">
+   <!-- Left Logo with padding --> 
+<img src="abc.jpeg" alt="Pharmacy" style="width: 250px; height: 150px;" />
+
+   
+  <div style="color:white">
+    <h1 style="font-size: 28px; font-weight: bold; margin: 0;color: #e1e1ff;">STIPSR
+  </div> 
+
+  <!-- Right Logo with padding -->
+  
+
+
+
+
+
+           
+                <div class="nav-links" style="display: flexbox; " id="navLinks" >
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="#">Programs <i class="fas fa-chevron-down"></i></a>
+                        
+                        <li class="dropdown" >
+                            <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-content">
-                                <a href="bpharm.html">B.Pharm</a>
-                                <a href="mpharm.html">M.Pharm</a>
-                                <a href="phd.html">Ph.D</a>
-                                <a href="diploma.html">Diploma Programs</a>
+                                <a href="about.html">About</a>
+                                <a href="institute.html">Institute</a>
+                                <a href="vison.html">Vison and Mission</a>
+                                <a href="message.html">Message</a>
+                                <a href="diploma.html">GB/CDC</a>
+                                <a href="org.html">Organogram</a>
+                                <a href="infrastructure.html">Infrastructure</a>
+                                
                             </div>
                         </li>
-                        <li><a href="admissions.html">Admissions</a></li>
-                        <li><a href="facilities.html">Facilities</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="admin.html">Admin</a></li>
+                        <li class="dropdown"> 
+                             <a href="#">Affiliation <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="bpharm.html">MSBTE</a>
+                                <a href="mpharm.html">GOVT OF MAH</a>
+                                <a href="phd.html">Aishe</a>
+                                <a href="diploma.html">ISO</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content"> 
+                                 <a href="bpharm.html">D.Pharm</a>
+                                
+                            </div>
+                        </li>
+                        <li><a href="admissions.html">Faculty</a></li>
+                        <li class="dropdown">
+                            <a href="#">R&D <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="bpharm.html">publication</a>
+                                <a href="bpharm.html">Patent</a>
+                                <a href="bpharm.html">Copyright</a>
+                                
+                            </div>
+                        </li>
+                         <li><a href="admissions.html">IQAC</a></li>
+                        <li><a href="admissions.html">Event</a></li>
+                        <li><a href="admissions.html">Alumini</a></li>
+                        <li class="dropdown">
+                            <a href="#">Student corner<i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="bpharm.html">Student Activity</a>
+                                
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
                 <i class="fas fa-bars" onclick="showMenu()"></i>
             </div>
-        </nav>
-    </header>
+            </div>
+        </nav> 
+    </header>  
+
+
+   
+  
+       
 
     <!-- Hero Section -->
     <section class="hero">
@@ -122,502 +182,227 @@
         </div>
     </section>
 
-    
-
-    <!-- Programs Section -->
-    <section class="programs-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Academic Programs</h2>
-                <p>We offer comprehensive programs designed to meet the evolving needs of the pharmaceutical industry</p>
-            </div>
-            
-            <div class="programs-tabs">
-                
-            </div>
-            
-            <div id="bpharm" class="program-content active">
-                <div class="program-details">
-                    <h3>Bachelor of Pharmacy (B.Pharm)</h3>
-                    <p>Our 4-year B.Pharm program provides a strong foundation in pharmaceutical sciences with hands-on laboratory experience and industry exposure through internships.</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Duration: 4 Years</li>
-                        <li><i class="fas fa-check"></i> Intake: 100 Students</li>
-                        <li><i class="fas fa-check"></i> Eligibility: 10+2 with PCB/M</li>
-                        <li><i class="fas fa-check"></i> Approved by PCI</li>
-                    </ul>
-                    <a href="bpharm.html" class="btn">Program Details</a>
-                </div>
-                <div class="program-image">
-                    <img src="images/bpharm-lab.jpg" alt="B.Pharm Laboratory">
-                </div>
-            </div>
-            
-            <div id="mpharm" class="program-content">
-                <div class="program-details">
-                    <h3>Master of Pharmacy (M.Pharm)</h3>
-                    <p>Specialize in Pharmaceutical Chemistry, Pharmacology, Pharmaceutics, or Pharmacy Practice with our 2-year M.Pharm program.</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Duration: 2 Years</li>
-                        <li><i class="fas fa-check"></i> Specializations: 4</li>
-                        <li><i class="fas fa-check"></i> Eligibility: B.Pharm</li>
-                        <li><i class="fas fa-check"></i> Research Focus</li>
-                    </ul>
-                    <a href="mpharm.html" class="btn">Program Details</a>
-                </div>
-                <div class="program-image">
-                    <img src="images/mpharm-research.jpg" alt="M.Pharm Research">
-                </div>
-            </div>
-            
-            <!-- Other program contents would go here -->
-        </div>
-    </section>
-
-    <!-- Faculty Spotlight -->
-    <section class="faculty-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Meet Our Distinguished Faculty</h2>
-                <p>Learn from experts who are shaping the future of pharmaceutical sciences</p>
-            </div>
-            
-            <div class="faculty-grid">
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <img src="images/faculty1.jpg" alt="Dr. Sarah Johnson">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Dr. Sarah Johnson</h3>
-                        <p class="designation">Professor, Pharmaceutical Chemistry</p>
-                        <p class="research">Research: Drug Design & Discovery</p>
-                        <p class="bio">With over 20 years of experience, Dr. Johnson has published 150+ papers in reputed journals...</p>
-                    </div>
-                </div>
-                
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <img src="images/faculty2.jpg" alt="Dr. Raj Patel">
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Dr. Raj Patel</h3>
-                        <p class="designation">Associate Professor, Pharmacology</p>
-                        <p class="research">Research: Neuropharmacology</p>
-                        <p class="bio">Recipient of the Young Scientist Award 2020 for his groundbreaking work in neurodegenerative diseases...</p>
-                    </div>
-                </div>
-                
-                <!-- More faculty cards would go here -->
-                
-                <div class="view-all">
-                    <a href="faculty.html" class="btn btn-outline">View All Faculty Members</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--blog -->
-    
-    <div class="blog-container" style="display: flex; justify-content: space-between; padding: 20px; flex-wrap: wrap;">
-        <!-- Blog Post 1 -->
-        <div class="blog-post" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 45%; margin: 15px 0; padding: 20px; transition: transform 0.3s; display: flex; flex-direction: column; align-items: center;">
-            <div class="post-header" style="display: flex; flex-direction: column; align-items: center;">
-                <img src="https://via.placeholder.com/100" alt="Faculty Image" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 10px;">
-                <div>
-                    <h2 style="font-size: 24px; color: #333; text-align: center;">Innovations in Pharmacy Education</h2>
-                    <p style="font-size: 14px; color: #777; text-align: center;">Dr. John Doe, Faculty of Pharmacy</p>
-                </div>
-            </div>
-            <p class="summary" style="color: #555; font-size: 16px; line-height: 1.5; text-align: center;">Pharmacy education is constantly evolving. From advancements in technology to new teaching methods, students are now prepared for a rapidly changing industry...</p>
-            <button class="read-more" onclick="togglePost(0)" style="background-color: #007BFF; color: white; border: none; padding: 10px; margin-top: 10px; cursor: pointer; font-size: 14px; border-radius: 5px; transition: background-color 0.3s;">Read More</button>
-            <div class="full-post" style="display: none; margin-top: 15px; font-size: 16px; color: #444;">
-                <p>With the rise of digital platforms, the future of pharmacy education looks promising. Students can now access resources, participate in virtual labs, and interact with peers and professors in real-time...</p>
-            </div>
-        </div>
-    
-        <!-- Blog Post 2 -->
-        <div class="blog-post" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 45%; margin: 15px 0; padding: 20px; transition: transform 0.3s; display: flex; flex-direction: column; align-items: center;">
-            <div class="post-header" style="display: flex; flex-direction: column; align-items: center;">
-                <img src="https://via.placeholder.com/100" alt="Faculty Image" style="border-radius: 50%; width: 80px; height: 80px; margin-bottom: 10px;">
-                <div>
-                    <h2 style="font-size: 24px; color: #333; text-align: center;">Importance of Clinical Practice in Pharmacy</h2>
-                    <p style="font-size: 14px; color: #777; text-align: center;">Dr. Jane Smith, Faculty of Pharmacy</p>
-                </div>
-            </div>
-            <p class="summary" style="color: #555; font-size: 16px; line-height: 1.5; text-align: center;">Clinical practice is a crucial part of pharmacy education, allowing students to apply their theoretical knowledge in real-world scenarios...</p>
-            <button class="read-more" onclick="togglePost(1)" style="background-color: #007BFF; color: white; border: none; padding: 10px; margin-top: 10px; cursor: pointer; font-size: 14px; border-radius: 5px; transition: background-color 0.3s;">Read More</button>
-            <div class="full-post" style="display: none; margin-top: 15px; font-size: 16px; color: #444;">
-                <p>Clinical practice allows students to engage with patients, understand their needs, and learn about medication therapy management. This hands-on experience is invaluable in developing practical skills that will benefit them in their future careers...</p>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        function togglePost(index) {
-            const fullPost = document.querySelectorAll('.full-post')[index];
-            const button = document.querySelectorAll('.read-more')[index];
-    
-            if (fullPost.style.display === 'block') {
-                fullPost.style.display = 'none';
-                button.innerText = 'Read More';
-            } else {
-                fullPost.style.display = 'block';
-                button.innerText = 'Read Less';
-            }
-        }
-    </script>
- 
-    
-
-<div style="text-align: center; background-color: #023e8a; color: white; padding: 15px;">
-  <p>&copy; 2025 XYZ Pharmacy College. All rights reserved.</p>
-</div>
-
-</body>
-</html>
-
-
-    <!-- Research Highlights -->
-    <section class="research-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Research Highlights</h2>
-                <p>Innovative research that's making a difference in healthcare</p>
-            </div>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-image">
-                        <img src="images/research1.jpg" alt="Cancer Research">
-                        <div class="badge">New Discovery</div>
-                    </div>
-                    <div class="research-content">
-                        <h3>Novel Drug Delivery System for Cancer Therapy</h3>
-                        <p class="researchers">Dr. Lee's team | Published in Journal of Controlled Release</p>
-                        <p class="excerpt">Our researchers have developed a targeted nanoparticle system that improves drug delivery to tumor sites while reducing side effects...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="research-card">
-                    <div class="research-image">
-                        <img src="images/research2.jpg" alt="Antibiotic Research">
-                        <div class="badge">Collaboration</div>
-                    </div>
-                    <div class="research-content">
-                        <h3>Combating Antibiotic Resistance</h3>
-                        <p class="researchers">Dr. Gupta's lab | In partnership with NIH</p>
-                        <p class="excerpt">Identifying new compounds that can overcome multidrug-resistant bacterial strains through innovative screening methods...</p>
-                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <!-- More research cards would go here -->
-            </div>
-            
-            <div class="cta-research">
-                <p>Interested in joining our research programs?</p>
-                <a href="research-opportunities.html" class="btn">Explore Research Opportunities</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Student Life Section -->
-    <section class="student-life">
-        <div class="container">
-            <div class="section-header">
-                <h2>Student Life at </h2>
-                <p>Beyond academics - a vibrant campus experience</p>
-            </div>
-            
-            <div class="student-life-grid">
-                <div class="life-card">
-                    <div class="life-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Student Organizations</h3>
-                    <p>Join one of our 15+ student organizations including APhA-ASP, research clubs, and cultural groups.</p>
-                </div>
-                
-                <div class="life-card">
-                    <div class="life-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Research Symposium</h3>
-                    <p>Annual event showcasing student research projects with awards and publication opportunities.</p>
-                </div>
-                
-                <div class="life-card">
-                    <div class="life-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Career Services</h3>
-                    <p>Resume workshops, mock interviews, and recruitment fairs with top pharmaceutical companies.</p>
-                </div>
-                
-                <div class="life-card">
-                    <div class="life-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3>Global Opportunities</h3>
-                    <p>Study abroad programs and international research collaborations.</p>
-                </div>
-            </div>
-            
-            <div class="student-gallery">
-                <h3>Campus Gallery</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/campus1.jpg" alt="Campus Building">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/lab1.jpg" alt="Laboratory">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/event1.jpg" alt="Student Event">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/library.jpg" alt="Library">
-                        <div class="gallery-overlay">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                    </div>
-                </div>
-                <a href="gallery.html" class="btn btn-outline">View More Photos</a>
-            </div>
-        </div>
-    </section>
-    <!-- Test-->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>College Testimonials</title>
-</head>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; margin: 0;">
-
-  <div style="max-width: 700px; margin: auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
-    <h2 style="color: #333; margin-bottom: 20px;">What Our Students Say</h2>
-    
-    <div id="testimonial" style="transition: opacity 0.5s ease-in-out;">
-      <img id="student-img" src="e:\Users\sanya\Downloads\testomonial1.webp" alt="Student" style="border-radius: 50%; width: 100px; height: 100px; margin-bottom: 10px;">
-      <p id="student-text" style="font-size: 16px; color: #555; margin: 15px 0;">“This college has changed my life. The faculty is supportive and the labs are world-class.”</p>
-      <p id="student-name" style="font-weight: bold; color: #007BFF;">— Ananya Singh, B.Pharm</p>
-    </div>
-  </div>
-
-  <script>
-    const testimonials = [
-      {
-        name: "Ananya Singh, B.Pharm",
-        image: "test 2.jpg",
-        text: "“This college has changed my life. The faculty is supportive and the labs are world-class.”"
-      },
-      {
-        name: "Rohit Mehra, M.Pharm",
-        image: "test3.jpg",
-        text: "“The clinical exposure and projects I worked on have prepared me well for the industry.”"
-      },
-      {
-        name: "Nisha Patel, D.Pharm",
-        image: "test4.jpg",
-        text: "“Excellent campus and experienced faculty! Proud to be a part of this institution.”"
-      }
-    ];
-
-    let index = 0;
-
-    function showTestimonial(i) {
-      const testimonial = testimonials[i];
-      document.getElementById("student-img").src = testimonial.image;
-      document.getElementById("student-text").innerText = testimonial.text;
-      document.getElementById("student-name").innerText = `— ${testimonial.name}`;
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 4000); // Change every 4 seconds
-  </script>
-
-</body>
-</html>
-
-        
-      
-      
-      
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Students Say</h2>
-            </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial-slide active">
-                    <div class="testimonial-content">
-                        <p>"The hands-on laboratory experience and industry visits during my B.Pharm at ACP gave me the practical skills that helped me secure my dream job at a leading pharmaceutical company right after graduation."</p>
-                        <div class="student-info">
-                            <img src="images/student1.jpg" alt="Priya Sharma">
-                            <div>
-                                <h4>Priya Sharma</h4>
-                                <p>B.Pharm 2022 | Formulation Scientist at MedLife Pharma</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <p>"The research opportunities available to undergraduates at ACP are exceptional. Working in Dr. Johnson's lab on drug discovery projects gave me publications and the confidence to pursue my Ph.D. at an Ivy League university."</p>
-                        <div class="student-info">
-                            <img src="images/student2.jpg" alt="David Kim">
-                            <div>
-                                <h4>David Kim</h4>
-                                <p>M.Pharm 2021 | Ph.D Candidate at Stanford</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- More testimonials would go here -->
-            </div>
-            
-            <div class="slider-controls">
-                <span class="dot active" onclick="currentTestimonial(1)"></span>
-                <span class="dot" onclick="currentTestimonial(2)"></span>
-                <span class="dot" onclick="currentTestimonial(3)"></span>
-            </div>
-        </div>
-    </section>
-
     <!-- News & Events Section -->
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>Latest news</h2>
+                <h2>Notifications</h2>
             </div>
             
         <div class="marquee-news">
             <marquee behavior="scroll" direction="left" scrollamount="5">
-                🎓 Latest Update: Admissions open for 2024-25! | Deadline: June 30, 2024 | Scholarship applications now available.
+                🎓 Admissions open for 2024-25! | Deadline: June 30, 2024 | Scholarship applications now available.
             </marquee>
         </div>
 
-        <div class="content">
-            <h2>About Our College</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+        <div style="background-color: #e1e1ff; padding: 20px; border-left: 5px solid #ffcc00; border-radius: 8px; margin-bottom: 80px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); max-width: 100%; position: relative; overflow: hidden; height: 210px;">
+    <h2 style="color: #00529b; font-size: 1.4rem; margin-bottom: 10px;">Latest Updates</h2>
+    <div style="height: 70px; overflow: hidden; position: relative;">
+        <ul style="position: absolute; margin: 0; padding: 0; list-style: none; animation: scroll-up 12s linear infinite;">
+            <li style="padding: 6px 0; font-size: 1rem;">🎓 Admissions open for M.Pharm 2025-26 batch – Apply Now!</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🏆 Ranked among Top 20 Pharmacy Institutions in India</li>
+            <li style="padding: 6px 0; font-size: 1rem;">📢 Ph.D. applications deadline extended to June 15</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🧪 AICTE-sponsored FDP begins May 20</li>
+            <li style="padding: 6px 0; font-size: 1rem;">🔬 New Drug Discovery Lab inaugurated</li>
+        </ul>
+
+        <!-- Inline Keyframe Animation -->
+<style>
+@keyframes scroll-up {
+  0% { top: 0; }
+  20% { top: 0; }
+  25% { top: -70px; }
+  45% { top: -70px; }
+  50% { top: -140px; }
+  70% { top: -140px; }
+  75% { top: -210px; }
+  95% { top: -210px; }
+  100% { top: 0; }
+}
+</style>
+
+    </div>
+</div>
+
         
-             <h2>Courses Offered</h2>
-             <ul>
-               <li>Computer Science</li>
-               <li>Business Administration</li>
-               <li>Engineering</li>
-             </ul>
-        </div>
-        </div>
-    </section>
-    <!-- Contact CTA Section -->
-    <section class="contact-cta">
+ </div>
+
+    
+
+<!-- Admisson enquiry -->
+
+  
+<section class="faculty-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Journey in Pharmacy?</h2>
-                <p>Applications for Fall 2023 are now open. Contact our admissions team for more information.</p>
-                <div class="cta-buttons">
-                    <a href="apply.html" class="btn">Apply Now</a>
-                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
-                </div>
+            <div class="section-header">
+                <h2>Admission Enquiry Form</h2>
+                <p>We are the future of pharmaceutical sciences</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col about-col">
-                    <div class="footer-logo">
-                        <img src="images/college-logo-white.png" alt=" Logo">
-                        <h3> College of Pharmacy</h3>
-                    </div>
-                    <p>Committed to excellence in pharmaceutical education, research, and service since 1985.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col links-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="admissions.html">Admissions</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="facilities.html">Facilities</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col contact-col">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Maharashtra</li>
-                        <li><i class="fas fa-phone"></i> 93456789</li>
-                        <li><i class="fas fa-envelope"></i> info@pharmacy.edu</li>
-                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col newsletter-col">
-                    <h3>Subscribe to Newsletter</h3>
-                    <p>Stay updated with our latest news and events</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email Address" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2025  Pharmacy College. All Rights Reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="sitemap.html">Sitemap</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="contact-container">
+    <h1>Contact Us</h1>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
 
-    <script src="script.js"></script>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: contact@example.com</p>
+      <p>Phone: +91-1234567890</p>
+      <p>Address: 123, Your Street, Your City</p>
+    </div>
+  </div>
+  <div class="container">
+    
+    <p>Interested in joining our institute? Connect with our team instantly through WhatsApp.</p>
+    <a class="whatsapp-btn" href="https://chat.whatsapp.com/HHqbg9VYvTv4FRWJq6ngB1" target="_blank">
+      Join WhatsApp Group
+    </a>
+  </div>
 </body>
-</html>
+  </div>
+
+
+ <!-- <footer style="background-color:#111827; color:white;" class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white pt-12 pb-6">
+    <div class="footer">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+   
+    <!-- Contact Info -->
+    <!-- <div>
+      <h2 class="text-2xl font-bold mb-4">🎓 Address</h2>
+      <p class="text-sm text-gray-300">
+        123 Knowledge Avenue<br>
+        EduCity, State 123456<br>
+        📞 (123) 456-7890<br>
+        ✉️ info@collegename.edu
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <!-- <div>
+      <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="#" class="hover:text-white transition duration-300">Aishe</a></li>
+        <li><a href="#" class="hover:text-white transition duration-300">MSBTE</a></li>
+        <li><a href="#" class="hover:text-white transition duration-300">ISO</a></li>
+        <li><a href="#" class="hover:text-white transition duration-300">GOVT OF MAH</a></li>
+      </ul>
+    </div> -->
+
+    <!-- Newsletter -->
+    <!-- <div>
+      <h2 class="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
+      <p class="text-sm text-gray-300 mb-3">Stay updated with our latest news, events, and announcements.</p>
+      <form class="flex flex-col sm:flex-row gap-3">
+        <input 
+          type="email" 
+          placeholder="Enter your email" 
+          class="w-full px-4 py-2 rounded-md bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          required
+        >
+        <button 
+          type="submit" 
+          class="bg-blue-600 hover:bg-blue-700 transition duration-300 text-white px-4 py-2 rounded-md text-sm font-medium"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+<footer style="background: linear-gradient(to right, #0B4A6B); color: white; padding: 40px 20px 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+
+      <!-- College Info -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">🧪 Pharmacy College</h2>
+        <p style="font-size: 14px; color: #d1d5db;">
+          456 Health Street<br>
+          MedCity, Maharashtra 400001<br>
+          📞 +91-9876543210<br>
+          ✉️ contact@pharmacollege.edu.in
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">Quick Links</h2>
+        <ul style="list-style: none; padding: 0; font-size: 14px; color: #d1d5db;">
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">DTE Maharashtra</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">PCI India</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">AICTE</a></li>
+          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">University Portal</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">Follow Us</h2>
+        <div style="display: flex; gap: 15px; font-size: 18px; color: #d1d5db;">
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <h2 style="font-size: 20px; margin-bottom: 15px;">Newsletter</h2>
+        <p style="font-size: 14px; color: #d1d5db;">Get health tips and admission alerts.</p>
+        <form onsubmit="return subscribe(event)">
+          <input type="email" id="email" placeholder="Enter your email" required
+            style="width: 100%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px; font-size: 14px;">
+          <button type="submit"
+            style="padding: 10px; background-color: #10b981; border: none; color: white; border-radius: 5px; font-weight: bold; cursor: pointer;"
+            onmouseover="this.style.backgroundColor='#059669'" onmouseout="this.style.backgroundColor='#10b981'">
+            Subscribe
+          </button>
+          <p id="message" style="font-size: 13px; margin-top: 8px;"></p>
+        </form>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; padding-top: 20px; font-size: 13px; color: #d1d5db; border-top: 1px solid #34d399; margin-top: 30px;">
+      © 2025 Pharmacy College. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function subscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message');
+      const isValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
+      if (isValid) {
+        message.style.color = "#10b981";
+        message.textContent = "Thank you for subscribing!";
+        document.getElementById('email').value = '';
+      } else {
+        message.style.color = "#f87171";
+        message.textContent = "Please enter a valid email.";
+      }
+      return false;
+    }
+  </script>
+   
+     
+
+
+            
+        
+                        
