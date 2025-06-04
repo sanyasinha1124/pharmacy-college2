@@ -1,408 +1,105 @@
-
-
- 
-            
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College of Pharmacy - Excellence in Pharmaceutical Education</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumatidevi Tompe Institute of Pharmaceutical Science</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
 
-</head>
-
-<body style="background-color: #f0fff4;" >
-    <!-- Header Section -->
-    <header class="header" style="background-color:#0B4A6B;">
-        <!-- <div class="top-bar">
-            <div class="container">
-                <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> +91 234567890</span>
-                    <span><i class="fas fa-envelope"></i> enquiry@pharmacy.edu</span>
-                </div>
-                <div class="quick-links">
-                   
-                   
-                </div>
-            </div>
-        </div> -->
-
-       
-        
-        <nav class=navbar style="background-color:#0B4A6B">
-
-          <div class="container" style="display: flex; justify-content: center;  gap: 0; padding: 20px; ">
-   <!-- Left Logo with padding --> 
-<img src="abc.jpeg" alt="Pharmacy" style="width: 250px; height: 150px;" />
-
-   
-  <div style="color:white">
-    <h1 style="font-size: 28px; font-weight: bold; margin: 0;color: #e1e1ff;">STIPSR
-  </div> 
-
-  <!-- Right Logo with padding -->
-  
-
-
-
-
-
-           
-                <div class="nav-links" style="display: flexbox; " id="navLinks" >
-                    <i class="fas fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        
-                        <li class="dropdown" >
-                            <a href="#">About Us <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="about.html">About</a>
-                                <a href="institute.html">Institute</a>
-                                <a href="vison.html">Vison and Mission</a>
-                                <a href="message.html">Message</a>
-                                <a href="diploma.html">GB/CDC</a>
-                                <a href="org.html">Organogram</a>
-                                <a href="infrastructure.html">Infrastructure</a>
-                                
-                            </div>
-                        </li>
-                        <li class="dropdown"> 
-                             <a href="#">Affiliation <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="bpharm.html">MSBTE</a>
-                                <a href="mpharm.html">GOVT OF MAH</a>
-                                <a href="phd.html">Aishe</a>
-                                <a href="diploma.html">ISO</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Courses <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content"> 
-                                 <a href="bpharm.html">D.Pharm</a>
-                                
-                            </div>
-                        </li>
-                        <li><a href="admissions.html">Faculty</a></li>
-                        <li class="dropdown">
-                            <a href="#">R&D <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="bpharm.html">publication</a>
-                                <a href="bpharm.html">Patent</a>
-                                <a href="bpharm.html">Copyright</a>
-                                
-                            </div>
-                        </li>
-                         <li><a href="admissions.html">IQAC</a></li>
-                        <li><a href="admissions.html">Event</a></li>
-                        <li><a href="admissions.html">Alumini</a></li>
-                        <li class="dropdown">
-                            <a href="#">Student corner<i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="bpharm.html">Student Activity</a>
-                                
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <i class="fas fa-bars" onclick="showMenu()"></i>
-            </div>
-            </div>
-        </nav> 
-    </header>  
-
-
-   
-  
-       
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl sm:text-2xl font-bold text-blue-700">Sumatidevi Tompe Institute</h1>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">About</a>
+          <a href="#" class="hover:text-blue-600">Courses</a>
+          <a href="#" class="hover:text-blue-600">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="#" class="block hover:text-blue-600">Home</a>
+        <a href="#" class="block hover:text-blue-600">About</a>
+        <a href="#" class="block hover:text-blue-600">Courses</a>
+        <a href="#" class="block hover:text-blue-600">Contact</a>
+      </div>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        
-        <div class="hero-slider">
-            <div class="slide active">
-                <div class="container">
-                    <h2>We are the Future of Pharmaceutical Sciences</h2>
-                    <p>Join our legacy of excellence in pharmacy education</p>
-                    <a href="admissions.html" class="btn">Apply Now</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container">
-                    <h2>Great Research Facilities</h2>
-                    <p>Explore our state-of-the-art laboratories and research centers</p>
-                    <a href="research.html" class="btn">Learn More</a>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container">
-                    <h2>100% Placement Assistance</h2>
-                    <p>Our graduates are placed in top pharmaceutical companies worldwide</p>
-                    <a href="placements.html" class="btn">Career Services</a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-controls">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </section>
-
-    <!-- Quick Links Section -->
-    <section class="quick-links-section">
-        <div class="container">
-            <div class="quick-link-box">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Programs</h3>
-                <p>Explore our undergraduate and graduate programs</p>
-                <a href="programs.html">View All <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="quick-link-box">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Academic Calendar</h3>
-                <p>Important dates and events for current students</p>
-                <a href="calendar.html">View Calendar <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="quick-link-box">
-                <i class="fas fa-flask"></i>
-                <h3>Research</h3>
-                <p>Discover our innovative research projects</p>
-                <a href="research.html">Learn More <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="quick-link-box">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Visit Us</h3>
-                <p>Schedule a campus tour</p>
-                <a href="visit.html">Plan Visit <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- News & Events Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Notifications</h2>
-            </div>
-            
-        <div class="marquee-news">
-            <marquee behavior="scroll" direction="left" scrollamount="5">
-                🎓 Admissions open for 2024-25! | Deadline: June 30, 2024 | Scholarship applications now available.
-            </marquee>
-        </div>
-
-        <div style="background-color: #e1e1ff; padding: 20px; border-left: 5px solid #ffcc00; border-radius: 8px; margin-bottom: 80px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); max-width: 100%; position: relative; overflow: hidden; height: 210px;">
-    <h2 style="color: #00529b; font-size: 1.4rem; margin-bottom: 10px;">Latest Updates</h2>
-    <div style="height: 70px; overflow: hidden; position: relative;">
-        <ul style="position: absolute; margin: 0; padding: 0; list-style: none; animation: scroll-up 12s linear infinite;">
-            <li style="padding: 6px 0; font-size: 1rem;">🎓 Admissions open for M.Pharm 2025-26 batch – Apply Now!</li>
-            <li style="padding: 6px 0; font-size: 1rem;">🏆 Ranked among Top 20 Pharmacy Institutions in India</li>
-            <li style="padding: 6px 0; font-size: 1rem;">📢 Ph.D. applications deadline extended to June 15</li>
-            <li style="padding: 6px 0; font-size: 1rem;">🧪 AICTE-sponsored FDP begins May 20</li>
-            <li style="padding: 6px 0; font-size: 1rem;">🔬 New Drug Discovery Lab inaugurated</li>
-        </ul>
-
-        <!-- Inline Keyframe Animation -->
-<style>
-@keyframes scroll-up {
-  0% { top: 0; }
-  20% { top: 0; }
-  25% { top: -70px; }
-  45% { top: -70px; }
-  50% { top: -140px; }
-  70% { top: -140px; }
-  75% { top: -210px; }
-  95% { top: -210px; }
-  100% { top: 0; }
-}
-</style>
-
-    </div>
-</div>
-
-        
- </div>
-
-    
-
-<!-- Admisson enquiry -->
-
-  
-<section class="faculty-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Admission Enquiry Form</h2>
-                <p>We are the future of pharmaceutical sciences</p>
-            </div>
-
-    <div class="contact-container">
-    <h1>Contact Us</h1>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="subject">
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="contact-info">
-      <p>Email: contact@example.com</p>
-      <p>Phone: +91-1234567890</p>
-      <p>Address: 123, Your Street, Your City</p>
-    </div>
-  </div>
-  <div class="container">
-    
-    <p>Interested in joining our institute? Connect with our team instantly through WhatsApp.</p>
-    <a class="whatsapp-btn" href="https://chat.whatsapp.com/HHqbg9VYvTv4FRWJq6ngB1" target="_blank">
-      Join WhatsApp Group
-    </a>
-  </div>
-</body>
-  </div>
-
-
- <!-- <footer style="background-color:#111827; color:white;" class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white pt-12 pb-6">
-    <div class="footer">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
-   
-    <!-- Contact Info -->
-    <!-- <div>
-      <h2 class="text-2xl font-bold mb-4">🎓 Address</h2>
-      <p class="text-sm text-gray-300">
-        123 Knowledge Avenue<br>
-        EduCity, State 123456<br>
-        📞 (123) 456-7890<br>
-        ✉️ info@collegename.edu
-      </p>
-    </div>
-
-    <!-- Quick Links -->
-    <!-- <div>
-      <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
-      <ul class="space-y-2 text-sm text-gray-300">
-        <li><a href="#" class="hover:text-white transition duration-300">Aishe</a></li>
-        <li><a href="#" class="hover:text-white transition duration-300">MSBTE</a></li>
-        <li><a href="#" class="hover:text-white transition duration-300">ISO</a></li>
-        <li><a href="#" class="hover:text-white transition duration-300">GOVT OF MAH</a></li>
-      </ul>
-    </div> -->
-
-    <!-- Newsletter -->
-    <!-- <div>
-      <h2 class="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
-      <p class="text-sm text-gray-300 mb-3">Stay updated with our latest news, events, and announcements.</p>
-      <form class="flex flex-col sm:flex-row gap-3">
-        <input 
-          type="email" 
-          placeholder="Enter your email" 
-          class="w-full px-4 py-2 rounded-md bg-white text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
-          required
-        >
-        <button 
-          type="submit" 
-          class="bg-blue-600 hover:bg-blue-700 transition duration-300 text-white px-4 py-2 rounded-md text-sm font-medium"
-        >
-          Subscribe
-        </button>
-      </form>
-    </div>
-  </div>
-</div> -->
-
-
-<footer style="background: linear-gradient(to right, #0B4A6B); color: white; padding: 40px 20px 20px;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
-
-      <!-- College Info -->
-      <div style="flex: 1 1 250px; margin: 20px;">
-        <h2 style="font-size: 20px; margin-bottom: 15px;">🧪 Pharmacy College</h2>
-        <p style="font-size: 14px; color: #d1d5db;">
-          456 Health Street<br>
-          MedCity, Maharashtra 400001<br>
-          📞 +91-9876543210<br>
-          ✉️ contact@pharmacollege.edu.in
+    <section class="bg-gradient-to-r from-blue-100 to-white py-12">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 mb-4">
+          Empowering Future Pharmacists
+        </h2>
+        <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+          Excellence in pharmaceutical education and innovation starts here.
         </p>
+        <a href="#contact" class="mt-6 inline-block bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition">Join Us Today</a>
       </div>
+    </section>
 
-      <!-- Quick Links -->
-      <div style="flex: 1 1 250px; margin: 20px;">
-        <h2 style="font-size: 20px; margin-bottom: 15px;">Quick Links</h2>
-        <ul style="list-style: none; padding: 0; font-size: 14px; color: #d1d5db;">
-          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">DTE Maharashtra</a></li>
-          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">PCI India</a></li>
-          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">AICTE</a></li>
-          <li><a href="#" style="color: inherit; text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'">University Portal</a></li>
-        </ul>
-      </div>
-
-      <!-- Social Media -->
-      <div style="flex: 1 1 250px; margin: 20px;">
-        <h2 style="font-size: 20px; margin-bottom: 15px;">Follow Us</h2>
-        <div style="display: flex; gap: 15px; font-size: 18px; color: #d1d5db;">
-          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-instagram"></i></a>
-          <a href="#" style="color: inherit;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#d1d5db'"><i class="fab fa-linkedin-in"></i></a>
+    <!-- Feature Cards -->
+    <section class="py-12 px-4 max-w-7xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Our Mission</h3>
+          <p class="text-gray-600 text-sm">To cultivate future leaders in pharmaceutical sciences through academic excellence.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Accredited Programs</h3>
+          <p class="text-gray-600 text-sm">We offer recognized diploma and degree programs with state-of-the-art labs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-blue-700 mb-2">Vibrant Campus</h3>
+          <p class="text-gray-600 text-sm">Engaging campus life with cultural fests, seminars, and active student clubs.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Newsletter -->
-      <div style="flex: 1 1 250px; margin: 20px;">
-        <h2 style="font-size: 20px; margin-bottom: 15px;">Newsletter</h2>
-        <p style="font-size: 14px; color: #d1d5db;">Get health tips and admission alerts.</p>
-        <form onsubmit="return subscribe(event)">
-          <input type="email" id="email" placeholder="Enter your email" required
-            style="width: 100%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px; font-size: 14px;">
-          <button type="submit"
-            style="padding: 10px; background-color: #10b981; border: none; color: white; border-radius: 5px; font-weight: bold; cursor: pointer;"
-            onmouseover="this.style.backgroundColor='#059669'" onmouseout="this.style.backgroundColor='#10b981'">
-            Subscribe
-          </button>
-          <p id="message" style="font-size: 13px; margin-top: 8px;"></p>
-        </form>
+    <!-- Call to Action -->
+    <section class="bg-blue-700 text-white py-10">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Start Your Journey in Pharmacy Today</h2>
+        <p class="mb-6 text-sm sm:text-base">Apply now and be part of an institute committed to transforming healthcare through education.</p>
+        <a href="#admissions" class="inline-block bg-white text-blue-700 px-6 py-2 rounded-full hover:bg-gray-200 transition">Apply Now</a>
       </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-12">
+      <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div>
+          <h4 class="text-white text-lg font-semibold mb-2">About</h4>
+          <p class="text-sm">Sumatidevi Tompe Institute is a premier institution fostering innovation in pharmaceutical education and research.</p>
+        </div>
+        <div>
+          <h4 class="text-white text-lg font-semibold mb-2">Quick Links</h4>
+          <ul class="text-sm space-y-1">
+            <li><a href="#" class="hover:underline">Admissions</a></li>
+            <li><a href="#" class="hover:underline">Departments</a></li>
+            <li><a href="#" class="hover:underline">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-lg font-semibold mb-2">Contact</h4>
+          <p class="text-sm">📞 +91-9876543210</p>
+          <p class="text-sm">✉️ info@sumatidevi.edu.in</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 text-center py-4 text-sm">
+        © 2025 Sumatidevi Tompe Institute. All rights reserved.
+      </div>
+    </footer>
 
-    <div style="text-align: center; padding-top: 20px; font-size: 13px; color: #d1d5db; border-top: 1px solid #34d399; margin-top: 30px;">
-      © 2025 Pharmacy College. All rights reserved.
-    </div>
-  </footer>
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+      document.getElementById("menu-btn").addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
 
-  <!-- Inline JavaScript -->
-  <script>
-    function subscribe(e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message');
-      const isValid = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
-      if (isValid) {
-        message.style.color = "#10b981";
-        message.textContent = "Thank you for subscribing!";
-        document.getElementById('email').value = '';
-      } else {
-        message.style.color = "#f87171";
-        message.textContent = "Please enter a valid email.";
-      }
-      return false;
-    }
-  </script>
-   
-     
-
-
-            
-        
-                        
