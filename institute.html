@@ -7,25 +7,30 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  
 
   <!-- Header -->
   <header class="bg-gradient-to-r from-[#0B4A6B] to-[#146C94] text-white shadow-lg">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
-      <h1 class="text-3xl font-extrabold text-center md:text-left mb-4 md:mb-0">
-        Sumatidevi Tompe Institute of Pharmaceutical Science
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl md:text-3xl font-extrabold text-white">
+        STIPSR
       </h1>
-      <nav class="flex space-x-6 text-lg font-medium">
-        <a href="#" class="hover:underline">Home</a>
-        <a href="#programs" class="hover:underline">Programs</a>
-        <a href="#research" class="hover:underline">Research</a>
-        <a href="#campus" class="hover:underline">Campus</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <label for="menu-toggle" class="md:hidden text-3xl cursor-pointer">&#9776;</label>
+
+      <!-- Navigation Menu -->
+      <nav class="absolute peer-checked:flex hidden peer-checked:flex-col top-16 left-0 w-full bg-[#0B4A6B] md:static md:flex md:flex-row md:w-auto md:bg-transparent text-lg font-medium">
+        <a href="#" class="block py-2 px-4 hover:underline">Home</a>
+        <a href="#programs" class="block py-2 px-4 hover:underline">Programs</a>
+        <a href="#research" class="block py-2 px-4 hover:underline">Research</a>
+        <a href="#campus" class="block py-2 px-4 hover:underline">Campus</a>
+        <a href="#contact" class="block py-2 px-4 hover:underline">Contact</a>
       </nav>
     </div>
   </header>
 
-
+  <!-- Hero Section -->
   <section class="bg-white py-16">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-4">Empowering Innovators, Building Futures</h2>
@@ -33,97 +38,59 @@
     </div>
   </section>
 
+  <!-- Programs -->
   <section id="programs" class="py-16 bg-gray-100">
     <div class="max-w-6xl mx-auto px-4">
       <h3 class="text-3xl font-bold mb-6 text-center">Academic Programs</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h4 class="text-xl font-semibold mb-2">Undergraduate </h4>
+          <h4 class="text-xl font-semibold mb-2">Undergraduate</h4>
           <ul class="list-disc list-inside text-gray-700">
-            
             <li>DPharm</li>
           </ul>
         </div>
-        
       </div>
     </div>
   </section>
 
+  <!-- Research -->
   <section id="research" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-bold mb-6">Research & Innovation</h3>
       <p class="text-gray-700 max-w-3xl mx-auto">
         Our institute fosters cutting-edge research in Artificial Intelligence, IoT, Robotics, Renewable Energy, and Smart Infrastructure.
-        We collaborate with industry leaders to drive innovation and entrepreneurial success.
       </p>
     </div>
   </section>
 
+  <!-- Campus -->
   <section id="campus" class="py-16 bg-gray-100">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-bold mb-6">Campus Infrastructure</h3>
       <p class="text-gray-700 max-w-3xl mx-auto">
-        Our campus features world-class laboratories, an innovation hub, digital library access 24x7, and modern classrooms designed to enhance learning experiences.
+        Our campus features world-class laboratories, an innovation hub, 24x7 digital library access, and modern classrooms.
       </p>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
       <p class="text-gray-700">
-        📍 [ Address]<br/>
+        📍 [Address]<br/>
         📞 +91-XXXXXXXXXX<br/>
         📧 contact@222college.edu.in
       </p>
     </div>
   </section>
 
- <!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-gradient-to-r from-[#0B4A6B] to-[#146C94] text-white mt-16">
     <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-      <!-- Contact Info -->
       <div>
         <h4 class="text-xl font-bold mb-2">Contact Us</h4>
         <p>📍 [College Address]</p>
-        <p>📞 +91-XXXXXXXXXX</p>
-        <p>📧 contact@222college.edu.in</p>
-      </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="text-xl font-bold mb-2">Quick Links</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Home</a></li>
-          <li><a href="#programs" class="hover:underline">Programs</a></li>
-          <li><a href="#research" class="hover:underline">Research</a></li>
-          <li><a href="#campus" class="hover:underline">Campus</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Institute Info -->
-      <div>
-        <h4 class="text-xl font-bold mb-2">About the Institute</h4>
-        <p>We are committed to excellence in pharmaceutical education and research, empowering students to innovate and lead in healthcare.</p>
-      </div>
-    </div>
-    <div class="border-t border-white/20 text-center py-4 text-sm">
-      &copy; 2025 Sumatidevi Tompe Institute of Pharmaceutical Science. All rights reserved.
-    </div>
-  </footer>
-
-</body>
-</html>
-</body>
-</html>
-
-        
-       
-
-
-
-             
-  
                 
                 
